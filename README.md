@@ -1,5 +1,5 @@
-## Hi there 👋
-## 📊 LeetCode Stats
+## 👋
+## 📊 LeetCode: 
 
 [![LeetCode Stats](https://leetcard.jacoblin.cool/pratyushdeosingh?theme=dark&font=Montserrat&ext=contest)](https://leetcode.com/pratyushdeosingh/)
 
