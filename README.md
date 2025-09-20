@@ -1,7 +1,7 @@
 ## Hi there 👋
 ## 📊 LeetCode Stats
 
-[![LeetCode Stats](https://leetcard.jacoblin.cool/pratyushdeo?theme=dark&font=Montserrat&ext=contest)](https://leetcode.com/pratyushdeosingh/)
+[![LeetCode Stats](https://leetcard.jacoblin.cool/pratyushdeosingh?theme=dark&font=Montserrat&ext=contest)](https://leetcode.com/pratyushdeosingh/)
 
 
 <!--
