@@ -1,4 +1,8 @@
 ## Hi there 👋
+## 📊 LeetCode Stats
+
+[![LeetCode Stats](https://leetcard.jacoblin.cool/pratyushdeo?theme=dark&font=Montserrat&ext=contest)](https://leetcode.com/pratyushdeo/)
+
 
 <!--
 **pratyushdeosingh/pratyushdeosingh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
