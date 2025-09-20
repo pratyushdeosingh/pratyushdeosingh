@@ -2,7 +2,8 @@
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Hey+there+👋;I'm+Pratyush+Deo+Singh;🚀+1st+Year+CSE+Student+at+VIT+Chennai;💻+Passionate+about+Python+%26+Java;🔥+Problem+Solver" alt="Animated text" />
 </p>
-## 📊 LeetCode: 
+
+📊 LeetCode: 
 
 [![LeetCode Stats](https://leetcard.jacoblin.cool/pratyushdeosingh?theme=dark&font=Montserrat&ext=contest)](https://leetcode.com/pratyushdeosingh/)
 
