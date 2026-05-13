@@ -1,11 +1,11 @@
 <h1 align="center">Pratyush Deo Singh</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=24&duration=2600&pause=800&color=36BCF7&center=true&vCenter=true&width=850&lines=Hi%2C+I'm+Pratyush+Deo+Singh;Second-Year+CSE+Student+%40+VIT+Chennai;Building+Projects+%7C+Solving+Problems+%7C+Learning+Daily" alt="Typing intro" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=24&duration=2500&pause=700&color=36BCF7&center=true&vCenter=true&width=900&lines=Hi%2C+I'm+Pratyush+Deo+Singh;Second-Year+CSE+Student+%40+VIT+Chennai;Software+Development+%7C+Problem+Solving+%7C+Open+Source+Learning" alt="Typing intro" />
 </p>
 
 <p align="center">
-  <b>Second-year Computer Science Engineering student at VIT Chennai</b>
+  <b>Computer Science Engineering · VIT Chennai</b>
 </p>
 
 <p align="center">
@@ -24,14 +24,20 @@
 
 ## About
 
-- Focused on building strong fundamentals in core CS and software development.
-- Interested in clean code, problem solving, and practical project development.
-- Currently growing through DSA, development workflows, and open-source learning.
+- Second-year CSE student building strong fundamentals in CS and software engineering.
+- Interested in backend logic, problem solving, and scalable project development.
+- Currently focused on DSA, development best practices, and consistent project work.
 
 ## Tech Stack
 
-<p>
-  <img src="https://skillicons.dev/icons?i=cpp,java,c,python,html,css,js,git,github,vscode,linux" alt="Tech stack icons"/>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=cpp,java,c,python,html,css,js,git,github,vscode,linux,postgres,mysql,docker" alt="Tech stack icons"/>
+</p>
+
+## GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=pratyushdeosingh&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub stats"/>
 </p>
 
 ## LeetCode
@@ -40,4 +46,8 @@
   <a href="https://leetcode.com/pratyushdeosingh/">
     <img src="https://leetcard.jacoblin.cool/pratyushdeosingh?theme=dark&font=Montserrat&ext=contest" alt="LeetCode stats"/>
   </a>
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=pratyushdeosingh&style=for-the-badge&color=0e75b6" alt="Profile views"/>
 </p>
