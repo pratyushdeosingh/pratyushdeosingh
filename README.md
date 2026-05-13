@@ -50,11 +50,20 @@
 
 ---
 
-<h2 align="center">Featured Projects</h2>
+<h2 align="center">Core Interests</h2>
 
-- [**Portfolio**](https://github.com/pratyushdeosingh/portfolio) — modern portfolio with smooth interactions and responsive design.
-- [**AeroVis**](https://github.com/pratyushdeosingh/AeroVis) — project work focused on structured engineering implementation.
-- [**DSA Lab Work**](https://github.com/pratyushdeosingh/dsa-lab-work) — core data structures and algorithms practice repository.
+- Full-stack web development (frontend architecture + backend APIs).
+- Data structures, algorithms, and problem-solving consistency.
+- Building scalable systems with clean code and strong engineering practices.
+
+---
+
+<h2 align="center">Learning Roadmap</h2>
+
+- Strengthening MERN/Node.js backend fundamentals and API design.
+- Improving database design and query optimization (PostgreSQL/MySQL).
+- Solving DSA problems regularly and applying concepts in real builds.
+- Growing with GitHub workflows, open-source contribution, and collaboration.
 
 ---
 
