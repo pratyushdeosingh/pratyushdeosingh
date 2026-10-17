@@ -1,10 +1,10 @@
 <p>
-  <img src="./assets/header.svg" width="100%" alt="Pratyush Deo Singh — code, systems, curiosity. CSE at VIT Chennai. Building and exploring." />
+  <img src="./assets/header-clean.svg" width="100%" alt="Pratyush Deo Singh — code, systems, curiosity. CSE at VIT Chennai. Building and exploring." />
 </p>
 
 I build web apps, connect systems, and follow interesting problems.
 
-[Portfolio](https://pratyushdeosingh.netlify.app) &nbsp; / &nbsp; [Email](mailto:workforpratyush@gmail.com) &nbsp; / &nbsp; [LeetCode](https://leetcode.com/pratyushdeosingh/)
+[Email](mailto:workforpratyush@gmail.com) &nbsp; / &nbsp; [LeetCode](https://leetcode.com/pratyushdeosingh/)
 
 <br>
 
