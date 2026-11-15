@@ -12,7 +12,7 @@
   <a href="mailto:workforpratyush@gmail.com"><img src="./assets/btn-email.svg" height="44" alt="Email" /></a>
 </p>
 
-<img src="./assets/terminal.svg" width="100%" alt="whoami: Pratyush Deo Singh, B.Tech CSE at VIT Chennai (2025-2029). Focus: data structures and algorithms, full-stack, AI systems. Now: building a hazard-inspection rover with ESP32 control, live telemetry and vision. Open to internships and collaborations." />
+<img src="./assets/about.svg" width="100%" alt="About: I like building things and understanding how they work at a deeper level. I'm a Computer Science undergraduate at VIT Chennai. I build web apps, connect systems, and follow interesting problems: fraud-detection pipelines, agentic marketplaces, IoT hardware and a hazard-inspection rover. Right now I'm sharpening Data Structures and Algorithms and exploring better interfaces and the systems behind them. Based in Chennai, India. B.Tech CSE, 2025 to 2029. Open to internships." />
 
 <img src="./assets/stack.svg" width="100%" alt="TypeScript, React, Next.js, Python, FastAPI, SQL, C++, C, Java, Oracle PL/SQL, Arduino, Docker, Git" />
 

@@ -313,36 +313,70 @@ function stack() {
   write('stack.svg', svg(W, H, 'Tech stack', items.join(', '), css, body));
 }
 
-// ---------- terminal ----------
+// ---------- about ----------
 
-function terminal() {
-  const W = 1200, H = 330, X = 48, size = 16;
-  const blocks = [
-    ['whoami', 'pratyush deo singh  /  b.tech cse, vit chennai (2025-2029)'],
-    ['cat focus.txt', 'data structures & algorithms  /  full-stack  /  ai systems'],
-    ['cat now.txt', 'building a hazard-inspection rover: esp32 control, live telemetry, vision'],
-    ['cat status.txt', 'open to internships and collaborations']
+function about() {
+  const W = 1200, H = 336, X = 48;
+  const lead = wrap('I like building things and understanding how they work at a deeper level.', 54);
+  const para = wrap(
+    "I'm a Computer Science undergraduate at VIT Chennai. I build web apps, connect systems, and follow interesting problems: fraud-detection pipelines, agentic marketplaces, IoT hardware and a hazard-inspection rover. Right now I'm sharpening Data Structures & Algorithms and exploring better interfaces and the systems behind them.",
+    74
+  );
+  const facts = [
+    ['BASE', 'CHENNAI, INDIA'],
+    ['STUDY', 'B.TECH CSE, VIT CHENNAI'],
+    ['BATCH', '2025 - 2029'],
+    ['FOCUS', 'DSA / FULL-STACK / AI'],
+    ['STATUS', 'OPEN TO INTERNSHIPS']
   ];
-  let y = 104, time = 500, out = '';
-  for (const [cmd, res] of blocks) {
-    out += t(X, y, '$', size, { fill: C.mag, weight: 700, cls: 'in', style: `animation-delay:${time}ms` });
-    const ty = typed(X + 20, y, cmd, size, { fill: C.cyan, start: time + 150, step: 45 });
-    out += ty.svg;
-    out += t(X + 20, y + 25, res, size, { fill: C.text, cls: 'fade', style: `animation-delay:${ty.end + 180}ms` });
-    y += 56;
-    time = ty.end + 750;
+  const DX = 806;
+  let y = 116, text = '', delay = 200;
+  for (const l of lead) {
+    text += t(X + 22, y, l, 20, { weight: 700, cls: 'fade', style: `animation-delay:${delay}ms` });
+    y += 30;
+    delay += 140;
   }
-  out += t(X, y - 2, '$', size, { fill: C.mag, weight: 700, cls: 'in', style: `animation-delay:${time}ms` });
-  out += `<g class="in" style="animation-delay:${time}ms"><rect class="blink" x="${X + 20}" y="${y - 17}" width="10" height="19" fill="${C.cyan}"/></g>`;
-
+  const leadEnd = y - 22;
+  y += 12;
+  for (const l of para) {
+    text += t(X + 22, y, l, 15, { fill: C.dim, cls: 'fade', style: `animation-delay:${delay}ms` });
+    y += 25;
+    delay += 110;
+  }
+  const rows = facts
+    .map(([k, v], i) => {
+      const ry = 102 + i * 45;
+      const last = i === facts.length - 1;
+      return `<g class="fade" style="animation-delay:${500 + i * 160}ms">
+${t(DX, ry, k, 10.5, { fill: C.faint, ls: 2 })}
+${last ? `<circle class="pulse" cx="${DX + 5}" cy="${ry + 15}" r="4" fill="${C.grn}"/>` : ''}
+${t(DX + (last ? 18 : 0), ry + 20, v, 15, { fill: last ? C.grn : C.text, weight: 700, ls: 0.5 })}
+</g>`;
+    })
+    .join('\n');
+  const css = `
+.bar{transform-origin:0 96px;animation:grow 1s .1s cubic-bezier(.7,0,.2,1) both}
+@keyframes grow{from{transform:scaleY(0)}}
+.scanv{animation:scanv 6s ease-in-out infinite}
+@keyframes scanv{0%,100%{transform:translateY(0)}50%{transform:translateY(${H - 130}px)}}`;
   const body = `
-<rect width="${W}" height="48" fill="${C.panel}"/>
-<path d="M0 48H${W}" stroke="${C.line}"/>
-<circle cx="34" cy="24" r="6" fill="${C.mag}"/><circle cx="56" cy="24" r="6" fill="${C.yel}"/><circle cx="78" cy="24" r="6" fill="${C.grn}"/>
-${t(W / 2, 29, 'pratyush@vit-chennai: ~', 13, { fill: C.dim, ls: 1, anchor: 'middle' })}
-${t(W - 34, 29, 'ZSH', 12, { fill: C.faint, ls: 2, anchor: 'end' })}
-${out}`;
-  write('terminal.svg', svg(W, H, 'About, as a terminal session', blocks.map(([c, r]) => `${c}: ${r}`).join('. '), '', body));
+<defs>
+<radialGradient id="g" cx="0%" cy="100%" r="70%"><stop stop-color="${C.cyan}" stop-opacity=".12"/><stop offset="1" stop-color="${C.cyan}" stop-opacity="0"/></radialGradient>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="${C.cyan}"/><stop offset="1" stop-color="${C.mag}"/></linearGradient>
+</defs>
+<rect width="${W}" height="${H}" fill="url(#dots)" opacity=".5"/>
+<rect width="${W}" height="${H}" fill="url(#g)"/>
+${t(X, 50, '00', 14, { fill: C.mag, weight: 700 })}
+${t(X + 26, 50, '//', 14, { fill: C.faint })}
+${t(X + 52, 50, 'ABOUT', 14, { ls: 4, weight: 700 })}
+${t(W - 48, 50, 'PROFILE.DOSSIER', 11, { fill: C.faint, ls: 2, anchor: 'end' })}
+<path d="M${X} 68H${W - 48}" stroke="${C.line}"/>
+<rect class="bar" x="${X}" y="96" width="4" height="${leadEnd - 96}" fill="url(#bg)"/>
+${text}
+<path d="M${DX - 34} 90V${H - 34}" stroke="${C.line}"/>
+<rect class="scanv" x="${DX - 36}" y="90" width="5" height="34" fill="${C.cyan}" opacity=".8"/>
+${rows}`;
+  write('about.svg', svg(W, H, 'About', lead.join(' ') + ' ' + para.join(' '), css, body));
 }
 
 // ---------- section headers ----------
@@ -633,7 +667,7 @@ button('btn-linkedin.svg', 'LINKEDIN', C.mag);
 button('btn-leetcode.svg', 'LEETCODE', C.cyan);
 button('btn-email.svg', 'EMAIL', C.mag);
 stack();
-terminal();
+about();
 header('h-builds.svg', '01', 'SELECTED BUILDS', `${PROJECTS.length} ENTRIES`);
 header('h-signal.svg', '02', 'SIGNAL', 'LIVE GITHUB DATA');
 PROJECTS.forEach(card);
